@@ -35,3 +35,31 @@ console.log(typeof newArr)
 console.log("A",myArr3)
 const nArr = myArr3.slice(1,4)
 console.log(nArr)
+
+//slice() method 
+const newArr2 = [3,4,5,2,5,6,7,8]
+console.log(newArr2.slice(1,3))
+
+//splice() method
+const newArr3 =[3,4,5,7,3,2,6,8,9,7]
+//Removing elements using splice()
+let removed = newArr3.splice(2,3)
+console.log(removed)
+console.log(newArr3)
+
+//Adding elements using splice()
+let a = [10,20,30]
+a.splice(1,0,50,100)
+console.log(a)
+
+//Replacing element using splice()
+let b =[1,2,4,5,7,8,4,2,1,3]
+b.splice(2,3,10,20,30)
+console.log(b)
+
+//using negative index
+//this will remove the element from last
+let c =[2,3,4,5,6,7,6]
+c.splice(-2,1)
+//-2 means second element from last 
+console.log(c)
